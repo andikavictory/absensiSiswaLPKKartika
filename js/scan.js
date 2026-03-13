@@ -21,6 +21,7 @@ function onScanSuccess(decodedText){
 
     //pindah halaman
     window.location.href = "absensi.html"
+    scanner.clear()
    
     }
 

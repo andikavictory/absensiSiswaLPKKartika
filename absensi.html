@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Absensi</title>
+    <title>Absensi Siswa</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h2>Form Absensi</h2>
-    <p id="status"></p>
+   
+    <h2>Absensi Latihan Mengemudi</h2>
 
-    <label>Materi hari ini : </label><br>
-    <input type="text" name="" id="materi">
+    <!--DATA SISWA-->
+    <div id="dataSiswa">
+        <p><b>Nama :</b><span id="namaSiswa"></span></p> 
+        <p><b>Paket :</b><span id="paket"></span></p> 
+        <p><b>jenis Mobil :</b><span id="jenisMobil"></span></p> 
+        <p><b>Instruktur :</b><span id="instruktur"></span></p> 
+        <p><b>Pertemuan :</b><span id="pertemuan"></span></p> 
+        </div>
 
-    <br><br>
+        <hr>
 
-    <label>Keluhan : </label><br>
-    <textarea name="" id="keluhan"></textarea>
+        <!--LIST MATERI-->
+        <h3>LIST MATERI</h3>
+        <div id="listMateri">
+            <!-- Materi akan ditambahkan di sini -->
+        </div>
 
-    <br><br>
+        <hr>
 
-    <button onclick="kirimAbsensi()">Kirim Absensi</button>
-
+        <!--TUKAR MATERI-->
+        <H3>TUKAR MATERI</H3>
+        
     <script>
-        let cekQR = localStorage.getItem("qrValid")
-
-        if(!cekQR){
-            alert("QR Code tidak valid, silahkan scan ulang")
-            window.location.href = "scan.html"
-        }
-
-        function kirimAbsensi(){
-            alert("Absensi berhasil dikirim, terima kasih!")
-            localStorage.removeItem("qrValid") 
-            window.location.href = "dashboard.html"
-        }
+      
     </script>
 </body>
 </html>
