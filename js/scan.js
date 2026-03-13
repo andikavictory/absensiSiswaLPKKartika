@@ -1,7 +1,12 @@
 function onScanSuccess(decodedText){
-    let dataQR = JSON.parse(decodedText)
+    if(!decodedText.startsWith("ABSEN-")){
+        document.getElementById("status").innerText = "QR tidak valid"
+        return
+    }
+    let waktuQR = decodedText.replace("ABSEN-","")
+    
     let sekarang = Date.now()
-    let selisih = sekarang - dataQR.time
+    let selisih = sekarang - waktuQR
 
     //5 menit = 300000 ms
     if (selisih > 300000){
