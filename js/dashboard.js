@@ -14,3 +14,8 @@ function logout(){
     localStorage.removeItem("siswaLogin")
     window.location.href = "index.html"
 }
+
+function mulaiAbsen(){
+    localStorage.removeItem("qrValid")
+    window.location.href = "scan.html"
+}
