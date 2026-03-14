@@ -20,17 +20,25 @@ function tampilankanMateri(dataMateri){
     dataMateri.forEach(function(item) {
     //filter khusus pertemuan manual
 
-    if(item.includes("|manual") && murid.jenis === "Matic"){
+   if(item.includes("|manual") && murid.jenis === "Matic"){
+    return
+    }
+
+    if(item.includes("|matic") && murid.jenis === "Manual"){
         return
     }
-     item.replace("|manual", "")
 
-     let checkbox = `
-     <label>
-     <input type="checkbox" cvalue="${item}">
-     ${item}
-     </label>
-     <br>`
+    // hapus tag dari teks
+    item = item.replace("|manual", "")
+    item = item.replace("|matic", "")
+    item = item.replace("|all", "")
+
+    let checkbox = `
+    <label>
+    <input type="checkbox" cvalue="${item}">
+    ${item}
+    </label>
+    <br>`
 
      container.innerHTML += checkbox
     })
