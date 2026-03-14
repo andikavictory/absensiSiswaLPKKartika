@@ -8,8 +8,8 @@ function onScanSuccess(decodedText){
     let sekarang = Date.now()
     let selisih = sekarang - waktuQR
 
-    //5 menit = 300000 ms
-    if (selisih > 300000){
+    //20 detik = 20000 ms
+    if (selisih > 20000){
 
         document.getElementById("status").innerText = "Qr sudah kadaluarsa"
     } else {

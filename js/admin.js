@@ -11,5 +11,5 @@ function generateQR(){
 // Generate QR pertama kali saat halaman dimuat
 generateQR()
 
-// Perbarui QR setiap 5 menit (300000 ms)
-setInterval(generateQR, 300000)
+// Perbarui QR setiap 20000 ms atau 20 detik
+setInterval(generateQR, 20000)
