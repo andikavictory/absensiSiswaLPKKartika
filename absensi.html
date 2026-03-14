@@ -31,9 +31,48 @@
 
         <!--TUKAR MATERI-->
         <H3>TUKAR MATERI</H3>
-        
-    <script>
-      
-    </script>
+        <button id="tukarMateri">Tukar Materi</button>
+        <div id="areaTukarMateri" style="display:none">Tukar Materi
+            <p>Pilih materi dari pertemuan :</p>
+
+            <select id="pilihPertemuan">
+                <option value="1">Pertemuan 1</option>
+                <option value="2">Pertemuan 2</option>
+                <option value="3">Pertemuan 3</option>
+                <option value="4">Pertemuan 4</option>
+                <option value="5">Pertemuan 5</option>
+                <option value="6">Pertemuan 6</option>
+                <option value="7">Pertemuan 7</option>
+                <option value="8">Pertemuan 8</option>
+                <option value="9">Pertemuan 9</option>
+                <option value="10">Pertemuan 10</option>
+                <option value="11">Pertemuan 11</option>
+                <option value="12">Pertemuan 12</option>
+            </select>
+        </div>
+        <br>
+
+        <!--ALASAN TUKAR-->
+        <div id="areaAlasan" style="display: none;">
+            <p>Alasan tukar materi</p>
+            <input type="text" id="alasanTukar" placeholder="contoh : hujan deras">
+        </div>
+
+        <hr>
+
+        <!--KELUHAN-->
+
+        <h3>Keluhan (Optional)</h3>
+
+        <textarea id="keluhan" rows="3"></textarea>
+        <hr>
+
+        <!--TOMBOL SIMPAN-->
+        <button id="btnSimpan">Simpan Absensi</button>
+        <script src="js/dashboard.js"></script>
+        <script src="js/database.js"></script>
+        <script src="js/materi.js"></script>
+        <script src="js/absensi.js"></script>
+
 </body>
 </html>

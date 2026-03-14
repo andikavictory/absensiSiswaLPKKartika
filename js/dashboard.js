@@ -4,11 +4,10 @@ if(!data){
     window.location.href = "index.html"
 }
 
-let siswa = JSON.parse(data)
+let murid = JSON.parse(data)
 
-document.getElementById("nama").innerText = "Hallo " + siswa.nama
-
-document.getElementById("paket").innerText = "Paket : " +siswa.jenis + " " + siswa.paket + "x"
+document.getElementById("nama").innerText = "Hallo " + murid.nama
+document.getElementById("paket").innerText = "Paket : " +murid.jenis + " " + murid.paket + "x"
 
 function logout(){
     localStorage.removeItem("siswaLogin")

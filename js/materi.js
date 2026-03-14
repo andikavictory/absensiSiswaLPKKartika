@@ -1,5 +1,4 @@
 let materi = {
-    manual : {
         12 : {
         1 : [
             "Pengenalan instrumen",
@@ -322,5 +321,4 @@ let materi = {
             "Berhenti di belakang kendaraan lain"
             ]
         }
-    }
 }
